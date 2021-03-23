@@ -8,12 +8,9 @@ pipeline {
                 maven "maven3.6"
             }
             steps {
-                sh "printenv"
-            }
-        }
-        stage("Build2") {
-            steps {
-                sh "printenv"
+                sh "java -version"
+                sh "mvn --version"
+                sh "mvn clean deploy"
             }
         }
 
