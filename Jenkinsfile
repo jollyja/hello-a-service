@@ -7,14 +7,14 @@ pipeline {
     }
 
     stages {
-        stage('mvn-version') {
+        stage('jdk-version') {
             steps {
-                sh 'mvn --version'
                 sh 'java -version'
             }
         }
-        stage('jdk-version') {
+        stage('mvn-version') {
             steps {
+                sh 'mvn --version'
                 sh 'java -version'
             }
         }
