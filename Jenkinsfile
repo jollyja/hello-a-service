@@ -1,10 +1,11 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'maven3.6'
-        jdk   'jdk15'
-    }
+    def mvnHome = tool 'maven3.5.3'
+    env.PATH = "${mvnHome}/bin:${env.PATH}"
+
+    def jdkHome = tool 'jdk15'
+    env.PATH = "${jdkHome}/bin:${env.PATH}"
 
     stages {
         stage('jdk-version') {
