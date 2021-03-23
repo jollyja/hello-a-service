@@ -8,8 +8,6 @@ pipeline {
                 maven "maven3.6"
             }
             steps {
-                sh "java -version"
-                sh "mvn --version"
                 sh "mvn clean deploy"
             }
         }
