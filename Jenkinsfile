@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage("Build") {
+        stage("Build1") {
             tools {
                 jdk "jdk15"
                 maven "maven3.6"
@@ -10,15 +10,12 @@ pipeline {
             steps {
                 sh "printenv"
             }
+        }
+        stage("Build2") {
             steps {
-                sh "java -version"
-            }
-            steps {
-                sh "mvn --version"
-            }
-            steps {
-                sh "mvn clean deploy"
+                sh "printenv"
             }
         }
+
     }
 }
