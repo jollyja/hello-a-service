@@ -75,13 +75,13 @@
         <repository>
             <id>releases</id>
             <name>releases</name>
-            <url>http://localhost:9000/repository/maven-releases/</url>
+            <url>http://jollyjas-macbook-pro.local:9000/repository/maven-releases/</url>
         </repository>
 
         <snapshotRepository>
             <id>snapshots</id>
             <name>snapshots</name>
-            <url>http://localhost:9000/repository/maven-snapshots/</url>
+            <url>http://jollyjas-macbook-pro.local:9000/repository/maven-snapshots/</url>
         </snapshotRepository>
 
     </distributionManagement>
