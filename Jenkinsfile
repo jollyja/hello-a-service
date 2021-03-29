@@ -8,7 +8,7 @@ pipeline {
                 maven "maven3.6"
             }
             steps {
-                sh "mvn clean deploy"
+                sh "mvn clean deploy dockerfile:push"
             }
         }
 
