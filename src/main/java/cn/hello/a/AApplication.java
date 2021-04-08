@@ -1,5 +1,8 @@
 package cn.hello.a;
 
+import com.alibaba.nacos.spring.context.annotation.config.EnableNacosConfig;
+import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
+import com.alibaba.nacos.spring.context.annotation.discovery.EnableNacosDiscovery;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,13 +10,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AApplication {
 
     public static void main(String[] args) {
-        System.out.println(123456789);
-        System.out.println(123456789);
-        System.out.println(123456789);
-        System.out.println(123456789);
-        System.out.println(123456789);
-        System.out.println(123456789);
-        System.out.println(123456789);
         SpringApplication.run(AApplication.class, args);
     }
 
