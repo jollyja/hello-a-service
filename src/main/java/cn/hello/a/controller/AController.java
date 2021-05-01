@@ -1,7 +1,6 @@
 package cn.hello.a.controller;
 
 import cn.hello.a.model.Coffee;
-import com.alibaba.nacos.api.annotation.NacosInjected;
 import com.alibaba.nacos.api.exception.NacosException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
